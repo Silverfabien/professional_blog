@@ -21,8 +21,6 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="index.php">Accueil</a>
           <a class="navbar-brand" href="Blog.php">Blog</a>
-          <a class="navbar-brand" href="Competence.php">Compétence</a>
-          <a class="navbar-brand" href="Contact.php">Contact</a>
         </div>
       </div>
     </nav>
