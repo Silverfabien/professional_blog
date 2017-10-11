@@ -11,7 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="css/Blog.css">
   </head>
 
   <body>
