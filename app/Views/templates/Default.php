@@ -19,8 +19,8 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="Index.php">Blog</a>
-          <a class="navbar-brand" href="Presentation.php">Présentation</a>
+          <a class="navbar-brand" href="index.php">Accueil</a>
+          <a class="navbar-brand" href="Blog.php">Blog</a>
           <a class="navbar-brand" href="Competence.php">Compétence</a>
           <a class="navbar-brand" href="Contact.php">Contact</a>
         </div>
