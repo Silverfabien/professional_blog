@@ -28,7 +28,7 @@ if(!$auth->logged())
 ob_start();
 if($page === 'home')
 {
-	require ROOT . '/Views/admin/posts/Index.php';
+	require ROOT . '/Views/admin/posts/Blog.php';
 }
 elseif($page === 'posts.edit')
 {
@@ -36,7 +36,7 @@ elseif($page === 'posts.edit')
 }
 elseif($page === 'posts.add')
 {
-	require ROOT . '/Views/admin/posts/Add.php';
+	require ROOT . '/Views/admin/posts/Edit.php';
 }
 elseif($page === 'posts.delete')
 {
