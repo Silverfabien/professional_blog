@@ -1,2 +1,5 @@
 # professional_blog
-Projet 5 OpenClassroom Développeur d'application PHP / Symfony
+
+Project 5 OpenClassroom PHP / Symfony Application Developer.
+
+Change the text in Franch => English
