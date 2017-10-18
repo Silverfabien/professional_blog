@@ -23,14 +23,13 @@ class PostsController extends AppController
 	{
 		$article = $this->Post->findWithCategory($_GET['id']);
 		$this->render('posts.show', compact('article'));
-
 	}
 
 	public function add()
 	{
 		if(!empty($_POST))
 		{
-			$result = $this->Post->create(['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'contenu' => $_POST['contenu']]);
+			$result = $this->Post->create(['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'chapo' => $_POST['chapo'], 'contenu' => $_POST['contenu']]);
 			if($result)
 			{
 				return $this->index();
@@ -44,7 +43,7 @@ class PostsController extends AppController
 	{
 		if(!empty($_POST))
 		{
-			$result = $this->Post->update($_GET['id'], ['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'contenu' => $_POST['contenu']]);
+			$result = $this->Post->update($_GET['id'], ['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'chapo' => $_POST['chapo'], 'contenu' => $_POST['contenu']]);
 			if($result)
 			{
 				return $this->index();
@@ -55,7 +54,7 @@ class PostsController extends AppController
 		$this->render('posts.edit', compact('form'));
 	}
 
-	
+
 }
 
 ?>
