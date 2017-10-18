@@ -22,7 +22,7 @@ class PostsController extends AppController
 	{
 		if(!empty($_POST))
 		{
-			$result = $this->Post->create(['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'contenu' => $_POST['contenu']]);
+			$result = $this->Post->create(['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'chapo' => $_POST['chapo'], 'contenu' => $_POST['contenu']]);
 			if($result)
 			{
 				return $this->index();
@@ -36,7 +36,7 @@ class PostsController extends AppController
 	{
 		if(!empty($_POST))
 		{
-			$result = $this->Post->update($_GET['id'], ['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'contenu' => $_POST['contenu']]);
+			$result = $this->Post->update($_GET['id'], ['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'chapo' => $_POST['chapo'], 'contenu' => $_POST['contenu']]);
 			if($result)
 			{
 				return $this->index();
