@@ -13,3 +13,6 @@
 			<p><?= $post->extrait; ?></p>
 
 		<?php endforeach; ?>
+
+	</div>
+</div>
