@@ -1,15 +1,9 @@
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">	
-			<h3 class="title-index">Présentation</h3>
 
-				<p>Ici un logo</p>
-				<p>Hollebeque Fabien</p>
-				<p>Phrase d'accroche</p>
-			</div>
-	</div>
+
+<div class="container">
+	
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-md-12">
 			<h3 class="title-index">Compétence</h3>
 
 				<section>
@@ -103,5 +97,12 @@
 				</section>
 
 		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">	
+			<h3 class="title-index">Contact</h3>
+				<p>Me contacter ?</p>
+
+			</div>
 	</div>
 </div>
