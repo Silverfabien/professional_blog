@@ -1,4 +1,5 @@
-<a class="btn btn-primary" href="?p=posts.edit&id=<?= $article->id; ?>">Editer</a>					
+<a class="btn btn-primary" href="?p=posts.edit&id=<?= $article->id; ?>">Editer</a>
+<a class="btn btn-success" href="?p=commentaire.edit&id=<?= $article->id; ?>">Commenter</a>
 
 <h1><?= htmlspecialchars($article->titre); ?></h1>
 
