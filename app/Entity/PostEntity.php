@@ -3,17 +3,18 @@
 namespace App\Entity;
 
 use Core\Entity\Entity;
+use CommentaireEntity;
 
 class PostEntity extends Entity
 {
 	public function getUrl()
 	{
-		return 'IBlog.php?p=posts.show&id=' . $this->id;
+		return 'Blog.php?p=posts.show&id=' . $this->id;
 	}
 
 	public function getExtrait()
 	{
-		$html = '<p>' . substr(htmlspecialchars($this->contenu), 0, 100) . '...</p>';
+		$html = '<p>' . substr(htmlspecialchars($this->chapo), 0, 255) . '...</p>';
 		$html .= '<p><a href="' . $this->getUrl() . '">Voir la suite</a></p>';
 		return $html;
 	}
