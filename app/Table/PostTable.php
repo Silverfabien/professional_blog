@@ -3,7 +3,6 @@
 namespace App\Table;
 
 use Core\Table\Table;
-use CommentaireTable;
 
 class PostTable extends Table
 {
