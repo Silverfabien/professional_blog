@@ -7,6 +7,17 @@
   border-radius: 20px;
 }
 
+.img-logo
+{
+  text-align: center;
+  margin-top: -65px;
+  margin-bottom: -30px;
+}
+
+.img-logo-style
+{
+  border: 3px blue solid;
+}
 
 /* Compétence */
 
@@ -49,7 +60,6 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+        margin-right: -15px;
+        margin-left: -15px;
 }
-
