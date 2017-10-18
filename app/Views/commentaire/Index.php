@@ -13,3 +13,5 @@
 			<p><?= htmlspecialchars($commentaire->contenu); ?></p>
 
 		<?php endforeach; ?>
+	</div>
+</div>
