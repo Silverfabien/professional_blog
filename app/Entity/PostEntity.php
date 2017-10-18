@@ -3,7 +3,6 @@
 namespace App\Entity;
 
 use Core\Entity\Entity;
-use CommentaireEntity;
 
 class PostEntity extends Entity
 {
@@ -14,7 +13,7 @@ class PostEntity extends Entity
 
 	public function getExtrait()
 	{
-		$html = '<p>' . substr(htmlspecialchars($this->chapo), 0, 255) . '...</p>';
+		$html = '<p>' . substr(htmlspecialchars($this->chapo), 0, 255) . '</p>';
 		$html .= '<p><a href="' . $this->getUrl() . '">Voir la suite</a></p>';
 		return $html;
 	}
