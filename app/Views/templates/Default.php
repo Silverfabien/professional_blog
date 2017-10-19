@@ -48,7 +48,7 @@
       <div class="overlay">
         <div class="container">
           <h1 class="display-1 text-white">Hollebeque Fabien</h1>
-          <h2 class="display-4 text-white">Phrase d'accroche</h2>
+          <h2 class="display-4 text-white">Le développeur acharner</h2>
         </div>
       </div>
     </header>
@@ -67,7 +67,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        <p class="m-0 text-center text-white">Tous droits réservés / Copyright &copy; Your Website 2017</p>
       </div>
       <!-- /.container -->
     </footer>
