@@ -70,6 +70,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
+        <p class="m-0 text-center text-white">Me suivre sur => <a href="https://github.com/Silverfabien">GitHub</a> / <a href="https://www.linkedin.com/in/fabien-hollebeque-b21556140/">LinkedIn</a></p>
         <p class="m-0 text-center text-white">Tous droits réservés / Copyright &copy; Your Website 2017</p>
       </div>
       <!-- /.container -->
