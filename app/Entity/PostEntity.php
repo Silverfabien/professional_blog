@@ -22,7 +22,7 @@ class PostEntity extends Entity
 	{
 		$a = strtotime($this->dateAjout);
 		setlocale(LC_ALL, 'FR').': ';
-		$date = iconv('ISO-8859-1', 'UTF-8', strftime('%A %d %B %Y', $a) . ' a ' . strftime('%H', $a) . 'h ' . strftime('%M', $a) . 'min et ' . strftime('%S', $a) . 'sec') .'<br />';
+		$date = iconv('ISO-8859-1', 'UTF-8', strftime('%A %d %B %Y', $a) . ' a ' . strftime('%H', $a) . 'h' . strftime('%M', $a) . '<br />');
 		return $date;
 	}
 }
