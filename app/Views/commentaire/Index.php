@@ -6,7 +6,7 @@
 
 		<?php foreach($commentaires as $commentaire): ?>
 
-			<h2><a href="<?= $commentaire->url ?>">a</a></h2>
+			<h2><a href="<?= $commentaire->url ?>"><?= htmlspecialchars($commentaire->auteur); ?></a></h2>
 
 			<p><strong><?= htmlspecialchars($commentaire->auteur); ?></strong> a posté le post le <?= $commentaire->dateFormat; ?></p>
 
