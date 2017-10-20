@@ -11,6 +11,7 @@ class CommentaireController extends AppController
 	{
 		parent::__construct();
 		$this->loadModel('Commentaire');
+		$this->loadModel('Post');
 	}
 
 	public function index()
@@ -22,14 +23,14 @@ class CommentaireController extends AppController
 	public function show()
 	{
 		$com = $this->Commentaire->lastCommentaire($_GET['id']);
-		$this->render('commentaire.show', compact('com'));
+		$this->render('posts.show', compact('com'));
 	}
 
 	public function add()
 	{
 		if(!empty($_POST))
 		{
-			$result = $this->Commentaire->create(['auteur' => $_POST['auteur'], 'contenu' => $_POST['contenu']]);
+			$result = $this->Commentaire->create(['idArticle' => $_GET['id'], 'auteur' => $_POST['auteur'], 'contenu' => $_POST['contenu']]);
 			if($result)
 			{
 				return $this->index();
