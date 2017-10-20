@@ -1,5 +1,5 @@
 <a class="btn btn-primary" href="?p=posts.edit&id=<?= $article->id; ?>">Editer</a>
-<a class="btn btn-success" href="?p=commentaire.edit&id=<?= $article->id; ?>">Commenter</a>
+<a class="btn btn-success" href="?p=commentaire.add&id=<?= $article->id; ?>">Commenter</a>
 
 <h1><?= htmlspecialchars($article->titre); ?></h1>
 
@@ -8,3 +8,11 @@
 <p><?= htmlspecialchars($article->contenu); ?></p>
 
 <a href="Blog.php">Index</a>
+
+<p><?= htmlspecialchars($commentaires->contenu); ?></p>
+
+<?php
+
+
+
+?>
