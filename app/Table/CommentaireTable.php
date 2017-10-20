@@ -22,6 +22,9 @@ class CommentaireTable extends Table
 	{
 		return $this->query("SELECT commentaire.id, commentaire.auteur, commentaire.contenu, commentaire.date FROM commentaire WHERE commentaire.id = ?", [$id], true);
 	}
-}
 
-?>
+	public function lastCommentaires($idArticle)
+	{
+		return $this->query("SELECT id, auteur, contenu, `date` FROM commentaire WHERE idArticle = ?", [$idArticle], true);
+	}
+}
