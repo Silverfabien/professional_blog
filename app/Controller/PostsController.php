@@ -11,6 +11,7 @@ class PostsController extends AppController
 	{
 		parent::__construct();
 		$this->loadModel('Post');
+		$this->loadModel('Commentaire');
 	}
 
 	public function index()
@@ -22,7 +23,9 @@ class PostsController extends AppController
 	public function show()
 	{
 		$article = $this->Post->findWithCategory($_GET['id']);
-		$this->render('posts.show', compact('article'));
+		$commentaires = $this->Commentaire->lastCommentaires($_GET['id']);
+		var_dump($commentaires);
+		$this->render('posts.show', compact('article', 'commentaires'));
 	}
 
 	public function add()
