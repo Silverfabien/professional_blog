@@ -24,9 +24,7 @@ else
 	die('Acces interdit');
 }
 
-
 $content = ob_get_clean();
 require ROOT . '../app/Views/templates/default.php';
-
 
 ?>
