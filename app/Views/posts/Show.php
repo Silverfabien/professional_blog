@@ -10,9 +10,3 @@
 <a href="Blog.php">Index</a>
 
 <p><?= htmlspecialchars($commentaires->contenu); ?></p>
-
-<?php
-
-
-
-?>
