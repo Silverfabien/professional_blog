@@ -46,14 +46,13 @@ class MysqlDatabase extends Database
 		{
 			$req->setFetchMode(PDO::FETCH_CLASS, $class_name);
 		}
-		
 		if($one)
 		{
 			$datas = $req->fetch();
 		}
 		else
 		{
-			$datas = $req->fetchAll();
+			$datas = $req->fetchall();
 		}
 		return $datas;
 	}
