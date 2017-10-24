@@ -98,20 +98,4 @@
 
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-md-12">	
-			<h3 class="title-index">Contact</h3>
-
-				<!-- automatisé ceci en php -->
-
-				<form class="form-group">
-					<p>Votre Nom : <input class="form-control" type="text" name="auteur"></p>
-					<p>Votre Email : <input class="form-control" type="text" name="email"></p>
-					<p>Votre Sujet : <input class="form-control" type="text" name="sujet"></p>
-					<p>Contenu : <input class="form-control" type="text" name="contenu"></p>
-					<p><input class="btn btn-primary" type="submit" value="Envoyer" name="mail"></p>
-				</form>
-
-			</div>
-	</div>
 </div>
