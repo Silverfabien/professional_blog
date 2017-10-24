@@ -39,6 +39,9 @@
             <li class="nav-item">
               <a class="nav-link" href="Blog.php">Blog</a>
             </li>
+              <li class="nav-item">
+              <a class="nav-link" href="Contact.php">Contact</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="CV/CV_Hollebeque_Fabien.pdf">CV</a>
             </li>
