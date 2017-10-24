@@ -43,6 +43,7 @@ elseif($page === 'posts.delete')
 	require ROOT . '/Views/admin/posts/Delete.php';
 }
 
+
 $content = ob_get_clean();
 require ROOT . '/Views/templates/default.php';
 
