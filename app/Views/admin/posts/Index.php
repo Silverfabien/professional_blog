@@ -1,3 +1,5 @@
+<a href="?p=admin.commentaire.index">Commentaire</a>
+
 <h1>Administrer les articles</h1>
 
 <p>
