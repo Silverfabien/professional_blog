@@ -56,8 +56,6 @@ class PostsController extends AppController
 		$form = new BootstrapForm($post);
 		$this->render('posts.edit', compact('form'));
 	}
-
-
 }
 
 ?>
