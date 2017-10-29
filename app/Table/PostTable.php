@@ -18,7 +18,7 @@ class PostTable extends Table
 		return $this->query("SELECT articles.id, articles.titre, articles.contenu, articles.auteur, articles.dateAjout, articles.chapo FROM articles ORDER BY articles.dateAjout DESC");
 	}
 
-		public function findWithCategory($id)
+	public function findWithCategory($id)
 	{
 		return $this->query("SELECT articles.id, articles.titre, articles.contenu, articles.auteur, articles.dateAjout, articles.chapo FROM articles WHERE articles.id = ?", [$id], true);
 	}
