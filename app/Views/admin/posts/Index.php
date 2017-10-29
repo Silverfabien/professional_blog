@@ -1,4 +1,6 @@
-<a href="?p=admin.commentaire.index">Commentaire</a>
+<form action="?p=admin.commentaire.index" method="post">
+	<button type="submit" class="btn btn-info">Commentaires</button>
+</form>
 
 <h1>Administrer les articles</h1>
 
