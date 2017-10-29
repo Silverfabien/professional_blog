@@ -24,7 +24,6 @@ class PostsController extends AppController
 	{
 		$article = $this->Post->findWithCategory($_GET['id']);
 		$commentaires = $this->Commentaire->lastCommentaires($_GET['id']);
-		var_dump($commentaires);
 		$this->render('posts.show', compact('article', 'commentaires'));
 	}
 
@@ -49,7 +48,7 @@ class PostsController extends AppController
 			$result = $this->Post->update($_GET['id'], ['titre' => $_POST['titre'], 'auteur' => $_POST['auteur'], 'chapo' => $_POST['chapo'], 'contenu' => $_POST['contenu']]);
 			if($result)
 			{
-				return $this->index();
+				return $this->show();
 			}
 		}
 		$post = $this->Post->find($_GET['id']);
