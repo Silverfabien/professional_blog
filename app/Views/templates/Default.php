@@ -37,10 +37,10 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Blog.php">Blog</a>
+              <a class="nav-link" href="Index.php?p=posts.index">Blog</a>
             </li>
               <li class="nav-item">
-              <a class="nav-link" href="Contact.php">Contact</a>
+              <a class="nav-link" href="Index.php?p=contact.index">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="CV/CV_Hollebeque_Fabien.pdf">CV</a>
