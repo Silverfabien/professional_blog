@@ -11,20 +11,22 @@ if(isset($_GET['p']))
 }
 else
 {
-	$page = 'home';
+	$page = 'profil.index';
 }
 
-ob_start();
-if($page === 'home')
+$page = explode('.', $page);
+if($page[0] === 'admin')
 {
-	require ROOT . '../app/Views/profil/Index.php';
+	$controller = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
+	$action = $page[2];
 }
 else
 {
-	die('Acces interdit');
+	$controller = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
+	$action = $page[1];
 }
 
-$content = ob_get_clean();
-require ROOT . '../app/Views/templates/default.php';
+$controller = new $controller;
+$controller->$action();
 
 ?>
