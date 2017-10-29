@@ -6,5 +6,5 @@
 
 <p><?= htmlspecialchars($com->contenu); ?></p>
 
-<a href="Blog.php?p=commentaire.index">Index</a>
+<a href="Index.php?p=commentaire.index">Index</a>
 
