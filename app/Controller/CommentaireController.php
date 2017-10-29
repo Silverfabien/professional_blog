@@ -22,8 +22,8 @@ class CommentaireController extends AppController
 
 	public function show()
 	{
-		$com = $this->Commentaire->lastCommentaire($_GET['id']);
-		$this->render('posts.show', compact('com'));
+		$commentaires = $this->Commentaire->lastCommentaire($_GET['id']);
+		$this->render('posts.show', compact('commentaires', 'article'));
 	}
 
 	public function add()
