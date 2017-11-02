@@ -31,7 +31,7 @@ class BootstrapForm extends Form
 		}
 		else
 		{
-			$input = '<input type="' . $type . '" name="' . $name . '" value="' . htmlspecialchars($this->getValue($name)) . '" class="form-group">';
+			$input = '<input type="' . $type . '" name="' . $name . '" value="' . htmlspecialchars($this->getValue($name)) . '" class="form-control">';
 		}
 		return $this->surround($label . $input);
 	}
