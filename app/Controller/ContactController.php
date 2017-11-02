@@ -22,9 +22,9 @@ class ContactController extends AppController
 
 $errors = [];
 
-if(!array_key_exists('sujet', $_POST) || $_POST['sujet'] == '')
+if(!array_key_exists('auteur', $_POST) || $_POST['auteur'] == '')
 {
-	$errors['sujet'] = "Vous n'avez pas renseigné le sujet";
+	$errors['sujet'] = "Vous n'avez pas renseigné votre pseudo";
 }
 if(!array_key_exists('email', $_POST) || $_POST['email'] == '' || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 {
