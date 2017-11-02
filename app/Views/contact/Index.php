@@ -19,8 +19,8 @@
 <?php endif; ?>
 
 <form method="post">
+	<?= $form->input('auteur', 'Auteur :'); ?>
 	<?= $form->input('email', 'Votre email :'); ?>
-	<?= $form->input('sujet', 'Sujet :'); ?>
 	<?= $form->input('contenu', 'Contenu :'); ?>
 	<button class="btn btn-primary">Envoyer</button>
 </form>
