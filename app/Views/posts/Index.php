@@ -1,4 +1,3 @@
-
 	<p>
 		<a href="?p=posts.add" class="btn btn-success">Ajouter</a>
 	</p>
@@ -10,7 +9,7 @@
 					<div style="background: #ddd; border-bottom: 1px solid #bbbbbb;">
 						<h2><a href="<?= $post->url ?>"><?= htmlspecialchars($post->titre); ?></a></h2>
 
-						<p><strong><?= htmlspecialchars($post->auteur); ?></strong> a posté le post le <?= $post->dateFormat; ?></p>
+						<p><em><strong><?= htmlspecialchars($post->auteur); ?></strong> a posté le post le <?= $post->dateFormat; ?></em></p>
 					</div>
 						<?= $post->extrait; ?>
 				</div>
