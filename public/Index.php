@@ -2,7 +2,7 @@
 
 define('ROOT', dirname(__DIR__));
 
-require ROOT . '/app/App.php';
+require ROOT . '/app/app.php';
 App::load();
 
 if(isset($_GET['p']))
@@ -17,7 +17,7 @@ else
 $page = explode('.', $page);
 if($page[0] === 'admin')
 {
-	$controller = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
+	$controller = '\App\Controller\admin\\' . ucfirst($page[1]) . 'Controller';
 	$action = $page[2];
 }
 else
