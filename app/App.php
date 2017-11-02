@@ -5,7 +5,7 @@ use Core\Database\MysqlDatabase;
 
 class App
 {
-	public $title = "Blog profesionnel";
+	public $title = "Blog Profesionnel";
 	private $db_instance;
 	private static $_instance;
 
@@ -21,15 +21,15 @@ class App
 	public static function load()
 	{
 		session_start();
-		require ROOT . '/app/Autoloader.php';
+		require ROOT . '/app/autoloader.php';
 		App\Autoloader::register();
-		require ROOT . '/core/Autoloader.php';
+		require ROOT . '/core/autoloader.php';
 		Core\Autoloader::register();
 	}
 
 	public function getTable($name)
 	{
-		$class_name = '\\App\\Table\\' . ucfirst($name) . 'Table';
+		$class_name = '\\App\\Table\\' . ucfirst($name) . 'table';
 		return new $class_name($this->getDb());
 	}
 
