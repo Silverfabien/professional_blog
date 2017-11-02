@@ -4,7 +4,7 @@ use Core\Auth\DBAuth;
 
 define('ROOT', dirname(__DIR__));
 
-require ROOT . '/app/App.php';
+require ROOT . '/app/app.php';
 App::load();
 
 if(isset($_GET['p']))
@@ -13,7 +13,7 @@ if(isset($_GET['p']))
 }
 else
 {
-	$page = 'home';
+	$page = 'profil.index';
 }
 
 // Auth
@@ -26,26 +26,26 @@ if(!$auth->logged())
 }
 
 ob_start();
-if($page === 'home')
+if($page === 'post.index')
 {
-	require ROOT . '/Views/admin/posts/Blog.php';
+	require ROOT . '/views/admin/posts/index.php';
 }
 elseif($page === 'posts.edit')
 {
-	require ROOT . '/Views/admin/posts/Edit.php';
+	require ROOT . '/views/admin/posts/edit.php';
 }
 elseif($page === 'posts.add')
 {
-	require ROOT . '/Views/admin/posts/Edit.php';
+	require ROOT . '/views/admin/posts/edit.php';
 }
 elseif($page === 'posts.delete')
 {
-	require ROOT . '/Views/admin/posts/Delete.php';
+	require ROOT . '/views/admin/posts/delete.php';
 }
 
 
 $content = ob_get_clean();
-require ROOT . '/Views/templates/default.php';
+require ROOT . '/views/templates/default.php';
 
 
 ?>
