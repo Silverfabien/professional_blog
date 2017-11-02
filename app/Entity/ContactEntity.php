@@ -8,7 +8,7 @@ class ContactEntity extends Entity
 {
 	public function getUrl()
 	{
-		return 'Index.php?p=contact.index';
+		return 'index.php?p=contact.index';
 	}
 }
 
