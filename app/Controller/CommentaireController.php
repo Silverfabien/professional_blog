@@ -14,18 +14,6 @@ class CommentaireController extends AppController
 		$this->loadModel('Post');
 	}
 
-	public function index()
-	{
-		$commentaires = $this->Commentaire->last();
-		$this->render('commentaire.index', compact('commentaires'));
-	}
-
-	public function show()
-	{
-		$commentaires = $this->Commentaire->lastCommentaire($_GET['id']);
-		$this->render('posts.show', compact('commentaires', 'article'));
-	}
-
 	public function add()
 	{
 		if(!empty($_POST))
@@ -33,7 +21,7 @@ class CommentaireController extends AppController
 			$result = $this->Commentaire->create(['idArticle' => $_GET['id'], 'auteur' => $_POST['auteur'], 'contenu' => $_POST['contenu']]);
 			if($result)
 			{
-				return $this->index();
+				header('Location: index.php?p=posts.show&id=' . $_GET['id']); 
 			}
 		}
 		$form = new BootstrapForm($_POST);
@@ -42,15 +30,15 @@ class CommentaireController extends AppController
 
 	public function edit()
 	{
+		$commentaire = $this->Commentaire->find($_GET['id']);
 		if(!empty($_POST))
 		{
 			$result = $this->Commentaire->update($_GET['id'], ['auteur' => $_POST['auteur'], 'contenu' => $_POST['contenu']]);
 			if($result)
-			{
-				return $this->index();
+			{	
+				header('Location: index.php?p=posts.show&id=' . $commentaire->idArticle); 
 			}
 		}
-		$commentaire = $this->Commentaire->find($_GET['id']);
 		$form = new BootstrapForm($commentaire);
 		$this->render('commentaire.edit', compact('form'));
 	}
