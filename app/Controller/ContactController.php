@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace App\Controller;
 
@@ -7,12 +7,6 @@ use Core\HTML\BootstrapForm;
 
 class ContactController extends AppController
 {
-	public function __construct()
-	{
-		parent::__construct();
-		$this->loadModel('Contact');
-	}
-
 	public function index()
 	{
 		$form = new BootstrapForm($_POST);
