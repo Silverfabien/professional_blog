@@ -24,7 +24,7 @@ $errors = [];
 
 if(!array_key_exists('auteur', $_POST) || $_POST['auteur'] == '')
 {
-	$errors['sujet'] = "Vous n'avez pas renseigné votre pseudo";
+	$errors['auteur'] = "Vous n'avez pas renseigné votre pseudo";
 }
 if(!array_key_exists('email', $_POST) || $_POST['email'] == '' || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 {
@@ -44,10 +44,10 @@ if(!empty($errors))
 else
 {
 	$_SESSION['success'] = 1;
-	$sujet = $_POST['sujet'];
+	$auteur = $_POST['auteur'];
 	$contenu = $_POST['contenu'];
 	$headers = 'FROM:' . $_POST['email'];
-	mail('silversat60@gmail.com', $sujet, $contenu, $headers);
+	mail('silversat60@gmail.com', $auteur, $contenu, $headers);
 }
 
 ?>
