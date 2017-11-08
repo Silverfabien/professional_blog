@@ -21,7 +21,7 @@
 <form method="post">
 	<?= $form->input('auteur', 'Auteur :'); ?>
 	<?= $form->input('email', 'Votre email :'); ?>
-	<?= $form->input('contenu', 'Contenu :'); ?>
+	<?= $form->input('contenu', 'contenu :', ['type' => 'textarea']); ?>
 	<button class="btn btn-primary">Envoyer</button>
 </form>
 <br>
