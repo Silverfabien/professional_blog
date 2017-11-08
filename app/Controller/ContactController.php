@@ -22,7 +22,7 @@ if(!array_key_exists('auteur', $_POST) || $_POST['auteur'] == '')
 }
 if(!array_key_exists('email', $_POST) || $_POST['email'] == '' || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 {
-	$errors['email'] = "Vous n'avez pas renseigné un email valide";
+	$errors['email'] = "Vous n'avez pas renseigné un email valide ou un email valide";
 }
 if(!array_key_exists('contenu', $_POST) || $_POST['contenu'] == '')
 {
