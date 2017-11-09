@@ -1,5 +1,3 @@
-<?php session_start() ?>
-
 <h2>Me contacter</h2><br>
 
 <p>Vous voulez me contacter pour plus d'informations ? Alors remplissez les champs ci-dessous et je vous répondrai dans les plus brefs délais.</p>
