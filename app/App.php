@@ -20,7 +20,6 @@ class App
 
 	public static function load()
 	{
-		session_start();
 		require ROOT . '/app/autoloader.php';
 		App\Autoloader::register();
 		require ROOT . '/core/autoloader.php';
