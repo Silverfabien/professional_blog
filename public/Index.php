@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 
 define('ROOT', dirname(__DIR__));
 
