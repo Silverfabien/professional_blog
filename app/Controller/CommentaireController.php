@@ -7,7 +7,7 @@ use Core\HTML\BootstrapForm;
 
 class CommentaireController extends AppController
 {
-	public function __construct()
+	public function __construct() 
 	{
 		parent::__construct();
 		$this->loadModel('Commentaire');
