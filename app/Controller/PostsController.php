@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller; 
 
 use Core\Controller\Controller;
 use Core\HTML\BootstrapForm;
